@@ -1,9 +1,11 @@
-const ExpenseDetails =()=>{
+const ExpenseDetails =(props)=>{
+    console.log(props);
     return (
-        <div className="m-2 p-3 bg-slate-800 text-white rounded-lg">
-            <span> 12 jan 2023 </span>
-            <span> Movie tickets </span>
-            <span> $100 </span>
+        <div className="m-2 p-3 bg-slate-800 text-white rounded-lg ">
+            <span> {props.date} </span>
+            <span> {props.expenseItem} </span>
+            <span> {props.locationOfExpenditure} </span>
+            <span> {props.expenseAmount} </span>
         </div>
     )
 }
