@@ -1,4 +1,5 @@
 
+import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItems";
 const Expense=()=>{
     const expense=[
@@ -28,12 +29,12 @@ const Expense=()=>{
         },
     ]
     return (
-        <div className="p-4 rounded-lg m-40 bg-slate-600">
+        <Card className="p-4 rounded-lg m-40 bg-slate-600">
             <ExpenseItem expense={expense[0]}/>
             <ExpenseItem expense={expense[1]}/>
             <ExpenseItem expense={expense[2]}/>
             <ExpenseItem expense={expense[3]}/>
-        </div>
+        </Card>
     )
 }
 
