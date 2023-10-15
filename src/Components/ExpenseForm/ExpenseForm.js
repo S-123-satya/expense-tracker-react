@@ -13,6 +13,9 @@ const ExpenseForm = () => {
       date:new Date(expenseDate),
     }
     console.log(expenseData);
+    setExpenesAmt("");
+    setExpenesDate("");
+    setExpenesTitle("");
   }
   return (
     <Card className=" bg-slate-700 w-3/5 text-white mx-auto mt-10 p-5">
@@ -35,6 +38,7 @@ const ExpenseForm = () => {
             className="text-black m-2 p-1 px-3 rounded-lg"
             name="expenseTitle"
             placeholder="Enter your item title"
+            value={expenseTitle}
             onChange={(e) => setExpenesTitle(e.target.value)}
           ></input>
         </Card>
@@ -45,6 +49,7 @@ const ExpenseForm = () => {
             className="text-black m-2 p-1 px-3 rounded-lg"
             name="expenseDate"
             placeholder="Enter your date"
+            value={expenseDate}
             onChange={(e)=>setExpenesDate(e.target.value)}
           ></input>
         </Card>
