@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Card from "../UI/Card";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [expenseAmt, setExpenesAmt] = useState("");
   const [expenseTitle, setExpenesTitle] = useState("");
   const [expenseDate, setExpenesDate] = useState("");
@@ -13,6 +13,8 @@ const ExpenseForm = () => {
       date:new Date(expenseDate),
     }
     console.log(expenseData);
+    console.log(props);
+    props.onAddExpense(expenseData);
     setExpenesAmt("");
     setExpenesDate("");
     setExpenesTitle("");

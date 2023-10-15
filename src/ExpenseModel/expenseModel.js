@@ -25,4 +25,9 @@ const expense=[
     },
 ]
 
+//make a class and make all neccesary function ==> best way
+export function addExpense(value){
+    expense.push(value);
+}
+
 export default expense;

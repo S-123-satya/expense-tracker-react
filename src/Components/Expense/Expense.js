@@ -1,4 +1,4 @@
-import expens from "./ExpenseModel/expenseModel";
+import expens from "../../ExpenseModel/expenseModel";
 import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItems";
 import { useState } from "react";
