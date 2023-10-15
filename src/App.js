@@ -1,9 +1,10 @@
 import Expense from "./Components/Expense/Expense";
-import ExpenseForm from "./Components/Expense/ExpenseForm";
+import ExpenseForm from "./Components/ExpenseForm/ExpenseForm";
 
 function App() {
+  
   return (
-    <div className="m-5">
+    <div className="bg-green-200">
       <ExpenseForm/>
       <Expense/>
     </div>

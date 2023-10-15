@@ -1,35 +1,12 @@
-
+import expens from "./ExpenseModel/expenseModel";
 import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItems";
+import { useState } from "react";
 const Expense=()=>{
-    const expense=[
-        {
-            title:"Movie Ticket",
-            amount:300,
-            date:new Date(),
-            location:"Delhi"
-        },
-        {
-            title:"Pizza",
-            amount:150,
-            date:new Date(),
-            location:"Noida"
-        },
-        {
-            title:"Shoes",
-            amount:500,
-            date:new Date(),
-            location:"Gurgoun"
-        },
-        {
-            title:"Clothes",
-            amount:1000,
-            date:new Date(),
-            location:"Lucknow"
-        },
-    ]
+    const [expense,setExpene] = useState([...expens]);
+    console.log(expense);
     return (
-        <Card className="p-4 rounded-lg m-40 bg-slate-600">
+        <Card className="p-4 rounded-lg mx-20 m-2 bg-slate-600">
             <ExpenseItem expense={expense[0]}/>
             <ExpenseItem expense={expense[1]}/>
             <ExpenseItem expense={expense[2]}/>
