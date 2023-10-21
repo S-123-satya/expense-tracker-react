@@ -25,8 +25,8 @@ const ExpenseForm = (props) => {
   return (
     <Card className=" bg-slate-700 w-3/5 text-white mx-auto mt-10 p-5">
       {!isFormVisible ? (
-        <Card className="m-2 flex justify-center  p-2 bg-slate-800 border border-cyan-200">
-          <button className="" onClick={toggleFormHandler}>Add New Expense</button>
+        <Card className="m-2 flex justify-center  ">
+          <button className="m-2 p-2 bg-slate-800 border border-cyan-200 rounded-lg" onClick={toggleFormHandler}>Add New Expense</button>
         </Card>
       ) : (
         <form onSubmit={submitHandler} className="flex flex-col">
